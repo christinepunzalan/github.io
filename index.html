@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,62 +24,105 @@
             <li><a href="#projects">Project</a></li>
         </ul>
     </nav>
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <!-- home section -->
-    <section class="home" id="home">
-        <div class="home">
-            <input type="checkbox" name="modal-btn" id="modal-btn">
-            <label for="modal-btn">
-                Open This
-                <i class="bx bx-expand-alt bx-burst"></i>
-                <i class="bx bx-x"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="bx bx-menu"></i>
             </label>
+            <label class="logo">myproject</label>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Project</a></li>
+            </ul>
+        </nav>
 
-            <div class="modal">
-                <div class="modal-wrap">
-                    <div class="img"></div>
-                    <h2>welcome!!!</h2>
-                    <p>Hi, I'm Christine! Welcome to my personal website, where I showcase my projects and school
-                        activities. This site is designed to display
-                        my work and the creative tasks I've completed. You can check out my projects and see the
-                        progress I've made. Feel free to explore
-                        and see how my skills have grown over time. I hope you enjoy browsing through my portfolio!</p>
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" name="modal-btn" id="modal-btn">
+                        <label for="modal-btn">
+                            Open This
+                            <i class="bx bx-expand-alt bx-burst"></i>
+                            <i class="bx bx-x"></i>
+                        </label>
+
+                        <div class="modal d-flex justify-content-center align-items-center">
+                            <div class="modal-wrap">
+                                <div class="img"></div>
+                                <h2>Welcome!!!</h2>
+                                <p>Hi, I'm Christine! Welcome to my personal website, where I showcase my projects and
+                                    school
+                                    activities. This site is designed to display
+                                    my work and the creative tasks I've completed. You can check out my projects and see
+                                    the
+                                    progress I've made. Feel free to explore
+                                    and see how my skills have grown over time. I hope you enjoy browsing through my
+                                    portfolio!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Project Section -->
         <section class="projects" id="projects">
-            <div class="container">
-                <a href="Activity2/index.html" class="card">
-                    <h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <span>Click Me</span>
-                    <div class="pic"></div>
-                    <button></button>
-                </a>
-                <a href="link-to-project-2.html" class="card card2">
-                    <h2>Project 2</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <span>Click Me</span>
-                    <div class="pic"></div>
-                    <button></button>
-                </a>
-                <a href="link-to-project-3.html" class="card card3 ">
-                    <h2>Project 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <span>Click Me</span>
-                    <div class="pic"></div>
-                    <button></button>
-                </a>
-                <a href="link-to-project-4.html" class="card card4">
-                    <h2>Project 4</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <span>Click Me</span>
-                    <div class="pic"></div>
-                    <button></button>
-                </a>
-            </div>
+            <div class="container mt-5 mb-5">
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <a href="Activity2/index.html" class="card">
+                            <h2>Project 1</h2>
+                            <p>Discover Switzerland's breathtaking landscapes, charming towns, and scenic wonders.</p>
+                            <span>Click Me</span>
+                            <div class="pic"></div>
+                            <button></button>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <a href="#" class="card">
+                            <h2>Project 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span>Click Me</span>
+                            <div class="pic"></div>
+                            <button></button>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <a href="#" class="card">
+                            <h2>Project 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span>Click Me</span>
+                            <div class="pic"></div>
+                            <button></button>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <a href="#" class="card">
+                            <h2>Project 4</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span>Click Me</span>
+                            <div class="pic"></div>
+                            <button></button>
+                        </a>
+                    </div>
+                </div>
         </section>
 
         <footer>
@@ -85,8 +130,8 @@
             <p><a href="#home">Back to top</a></p>
         </footer>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
-</body>
+    </body>
 
-</html>
+    </html>
