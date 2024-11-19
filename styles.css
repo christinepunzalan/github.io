@@ -376,7 +376,7 @@ a:hover {
 .container .card h2 {
     z-index: 99;
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
     right: 130px;
     font-size: 40px;
     font-weight: 700;
@@ -395,7 +395,7 @@ a:hover {
     width: 150px;
     color: #fff;
     opacity: 0;
-    font-size: 12px;
+    font-size: 10px;
     text-align: right;
     letter-spacing: 1px;
     transition: .2s ease;
