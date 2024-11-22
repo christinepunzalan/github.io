@@ -514,15 +514,11 @@ a:hover {
 }
 
 footer {
-    background-color: var(--black-s);
-    color: var(--white);
     text-align: center;
     padding: 20px;
     bottom: 0;
     width: 100%;
     max-width: 2000px;
-    
-
 }
 footer p {
     font-size: 1.6rem;
@@ -531,15 +527,7 @@ footer p {
 }
 
 footer a {
-    color: var(--blue);
+    color: var(--white);
     text-decoration: underline;
 }
-@media screen and (max-width: 768px) {
-    footer p {
-        font-size: 1.2rem; /* Reduce font size for smaller screens */
-    }
 
-    footer {
-        padding: 15px; /* Reduce padding on smaller screens */
-    }
-}
