@@ -3,97 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>GitHub Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-        <!-- Home Section -->
-        <section class="home" id="home">
-            <div class="container d-flex justify-content-center align-items-center">
-                <div class="row">
-                    <div class="col">
-                        <input type="checkbox" name="modal-btn" id="modal-btn">
-                        <label for="modal-btn">
-                            Open This
-                            <i class="bx bx-expand-alt bx-burst"></i>
-                            <i class="bx bx-x"></i>
-                        </label>
 
-                        <div class="modal d-flex justify-content-center align-items-center">
-                            <div class="modal-wrap">
-                                <div class="img"></div>
-                                <h2>Welcome!!!</h2>
-                                <p>Hi, I'm Christine! Welcome to my personal website, where I showcase my projects and
-                                    school
-                                    activities. This site is designed to display
-                                    my work and the creative tasks I've completed. You can check out my projects and see
-                                    the
-                                    progress I've made. Feel free to explore
-                                    and see how my skills have grown over time. I hope you enjoy browsing through my
-                                    portfolio!</p>
-                            </div>
-                        </div>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="container text-center">
+            <button id="openModalBtn" class="btn" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+                Open This <i class="bx bx-expand-alt bx-burst"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">Welcome!!!</h5>
+                    <!-- Close Button -->
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        X
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="img mb-3" style="height: 200px; background: url('https://imgur.com/45hH2Ym.gif') center/cover;">
                     </div>
+                    <p>Hi, I'm Christine! Welcome to my personal website, where I showcase my projects and school
+                        activities. This site is designed to display my work and the creative tasks I've completed. Feel
+                        free to explore and see how my skills have grown over time. I hope you enjoy browsing through my
+                        portfolio!</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <!-- Project Section -->
-        <section class="projects" id="projects">
-            <div class="container mt-5 mb-5">
-                <div class="row g-4">
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                        <a href="Activity2/index.html" class="card">
-                            <h2>Project 1</h2>
-                            <p>A web project showcasing Switzerland's stunning tourist destinations.</p>
-                            <span>Click Me</span>
-                            <div class="pic"></div>
-                            <button></button>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                        <a href="Midterm/index.html" class="card">
-                            <h2>Project 2</h2>
-                            <p>A dynamic application that fetches and displays country information using a public API.</p>
-                            <span>Click Me</span>
-                            <div class="pic"></div>
-                            <button></button>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                        <a href="#" class="card">
-                            <h2>Project 3</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <span>Click Me</span>
-                            <div class="pic"></div>
-                            <button></button>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                        <a href="#" class="card">
-                            <h2>Project 4</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <span>Click Me</span>
-                            <div class="pic"></div>
-                            <button></button>
-                        </a>
-                    </div>
+
+     <!-- Project Section -->
+     <section class="projects" id="projects">
+        <div class="container mt-5 mb-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="Activity2/index.html" class="card">
+                        <h2>Project 1</h2>
+                        <p>A web project showcasing Switzerland's stunning tourist destinations.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/QfeJLyi.gif);"></div>
+                        <button></button>
+                    </a>
                 </div>
-        </section>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="Midterm/index.html" class="card">
+                        <h2>Project 2</h2>
+                        <p>A dynamic application that fetches and displays country information using a public API.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/0GlMoHq.gif);"></div>
+                        <button></button>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="#" class="card">
+                        <h2>Project 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/Vn8p7EV.gif);"></div>
+                        <button></button>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="#" class="card">
+                        <h2>Project 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/o2kcQKw.gif);"></div>
+                        <button></button>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="#" class="card">
+                        <h2>Project 5</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/yHJis9n.gif);"></div>
+                        <button></button>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="#" class="card">
+                        <h2>Project 6</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/BxR1MGa.gif);"></div>
+                        <button></button>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="#" class="card">
+                        <h2>Project 7</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/ifVObds.gif);"></div>
+                        <button></button>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                    <a href="#" class="card">
+                        <h2>Project 8</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Click Me</span>
+                        <div class="pic" style="background-image: url(https://imgur.com/h2Kvh0p.gif);"></div>
+                        <button></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
             <p>Copyright © 2024 | All rights reserved.</p>
-            <p><a href="#home">Back to top</a></p>
-        </footer>
+            <a href="#home" class="back-to-top">Back to top</a>
+        </div>
+    </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    </html>
+</html>
