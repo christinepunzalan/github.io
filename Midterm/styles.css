@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton SC');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 body {
     background-image: url(https://www.creativeboom.com/upload/articles/0f/0f3ddbfc6ee87ed8511af72d925f72d13e38d6f0_1888.jpg);
@@ -68,7 +68,8 @@ body {
     margin-bottom: 10px;
     font-size: 1.25rem;
     color: #000000;
-    font-family: "Anton SC";
+    font-family: "Orbitron";
+    font-weight: bolder;
 }
 
 .scroll-button {
@@ -81,7 +82,8 @@ body {
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease;
-    font-family: "Anton SC";
+    font-family: "Orbitron";
+    font-weight: bolder;
 }
 
 .scroll-button:hover {
