@@ -6,150 +6,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Switzerland</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <!-- Home Section -->
-    <div id="home" class="row align-items-center p-3">
-        <div class="home-header col-12 col-md-6 mb-3 mb-md-0">
-            <h1>Welcome to Switzerland</h1>
-            <div class="home-tagline">
-                <p>A mountainous Central European country</p>
-                <p>Home to numerous lakes, villages and the high peaks of the Alps</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="position: fixed; top: 0; width: 100%; z-index: 10;">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cities">Famous Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#spot">Tourist Spots</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="home-view col-12 col-md-6">
-            <img src="https://www.alphatrad.com/sites/alphatrad.com/files/styles/news_image/public/images/articles/what-are-the-languages-spoken-in-switzerland.jpg?itok=7TptHWyA.jpg"
-                style="width: 100%; height: auto; object-fit: cover;">
+    </nav>
+
+    <!-- Home Section -->
+    <div class="container-fluid home-container">
+        <div id="home" class="row align-items-center g-3">
+            <div class="home-header col-12 col-md-6 text-center text-md-start">
+                <h1>Welcome to Switzerland</h1>
+                <div class="home-tagline">
+                    <p>A mountainous Central European country</p>
+                    <p>Home to numerous lakes, villages and the high peaks of the Alps</p>
+                </div>
+            </div>
+            <div class="home-view col-12 col-md-6">
+                <img src="https://www.alphatrad.com/sites/alphatrad.com/files/styles/news_image/public/images/articles/what-are-the-languages-spoken-in-switzerland.jpg?itok=7TptHWyA.jpg"
+                    alt="Switzerland" class="img-fluid rounded">
+            </div>
         </div>
     </div>
 
 
-    <!-- Famous Cities-->
-    <div id="cities" class="row">
-        <div class="feat-title col-12 col-mb-12">
+    <!-- Famous City Section -->
+    <div id="cities" class="container-fluid my-5">
+        <div class="row text-center mb-4">
+            <h2 class="feat-title col-12">Famous <span>CITIES</span></h2>
         </div>
-        <div id="cities-info">
-            <div class="card col-10 col-md-3" style="width: 20rem; height: 520px;">
-                <div class="card-body">
+        <div id="cities-info" class="row g-4 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="card h-100">
                     <img src="https://switzerland-tour.com/storage/media/Geneva/s/Geneva-in-Switzerland_600.jpg"
                         alt="Geneva" class="card-img-top">
-
-                    <h5 class="card-title">GENEVA</h5>
-                    <p class="card-text">Geneva is the second-largest city in Switzerland. The French-speaking city is
-                        famous as “World’s Smallest Metropolis” and situated on the banks of
-                        Lake Geneva, right at the foot of the Swiss Alps.</p>
-                    <a href="https://switzerland-tour.com/destinations/geneva" class="btn btn-primary">Read More</a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">GENEVA</h5>
+                        <p class="card-text">
+                            Geneva is the second-largest city in Switzerland. The French-speaking city is
+                            famous as “World’s Smallest Metropolis” and situated on the banks of
+                            Lake Geneva, right at the foot of the Swiss Alps.
+                        </p>
+                        <a href="https://switzerland-tour.com/destinations/geneva" class="btn btn-primary mt-auto">Read
+                            More</a>
+                    </div>
                 </div>
             </div>
-            <div class="card col-10 col-md-3" style="width: 20rem; height: 520px;">
-                <div class="card-body">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="card h-100">
                     <img src="https://switzerland-tour.com/storage/media/Zurich/s/Zurich-City_600.jpg" alt="Zurich"
                         class="card-img-top">
-
-                    <h5 class="card-title">ZURICH</h5>
-                    <p class="card-text">Zurich, being located in the heart of Switzerland and in the center of Europe,
-                        is one of the most important financial centers in the world.
-                        Zurich is considered as the highest standard of living in the world.</p>
-                    <a href="https://switzerland-tour.com/destinations/zurich" class="btn btn-primary">Read More</a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">ZURICH</h5>
+                        <p class="card-text">
+                            Zurich, being located in the heart of Switzerland and in the center of Europe,
+                            is one of the most important financial centers in the world.
+                            Zurich is considered as the highest standard of living in the world.
+                        </p>
+                        <a href="https://switzerland-tour.com/destinations/zurich" class="btn btn-primary mt-auto">Read
+                            More</a>
+                    </div>
                 </div>
             </div>
-            <div class="card col-10 col-md-3" style="width: 20rem; height: 520px;">
-                <div class="card-body">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                <div class="card h-100">
                     <img src="https://switzerland-tour.com/storage/media/Interlaken/s/Interlaken-Switzerland_600.jpg"
                         alt="Interlaken" class="card-img-top">
-
-                    <h5 class="card-title">INTERLAKEN</h5>
-                    <p class="card-text">Interlaken is a traditional resort town in the mountainous Bernese Oberland
-                        region of central Switzerland.
-                        This place lies between Thun and Brienz lakes, hence the name of the city originates.</p>
-                    <a href="https://switzerland-tour.com/destinations/interlaken" class="btn btn-primary">Read More</a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">INTERLAKEN</h5>
+                        <p class="card-text">
+                            Interlaken is a traditional resort town in the mountainous Bernese Oberland
+                            region of central Switzerland.
+                            This place lies between Thun and Brienz lakes, hence the name of the city originates.
+                        </p>
+                        <a href="https://switzerland-tour.com/destinations/interlaken"
+                            class="btn btn-primary mt-auto">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <!-- Tourist Spot -->
-    <div id="spot" class="row">
-        <div class="feat-title col-12">
-
-        </div>
-        <div id="spot-info" class="row">
-            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4" style="height: 250px;">
-                <img src="https://simskultur.eu/wp-content/uploads/2021/02/Doppeltu%CC%88rme._Grossmu%CC%88nster_Zu%CC%88rich-1280x640.jpg"
-                    class="card-img-top" alt="Image1">
-                <div class="card-body">
-                    <h5 class="card-title">Grossmünster</h5>
-                    <p class="card-text">This is a prominent Protestant church in Zurich, notable for its twin towers
-                        and significant role in the Swiss Reformation led by Huldrych Zwingli in the early 16th century.
-                        The Romanesque-style building dates back to around the 12th century and is a key symbol of
-                        Zurich.</p>
-                    <a href="https://en.wikipedia.org/wiki/Grossm%C3%BCnster" class="btn btn-primary">Learn More</a>
+    <!-- Tourist Spots Section-->
+     <section class="spot" id="spot">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Tourist <span>SPOTS</span></h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+                <div class="col">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <img src="https://simskultur.eu/wp-content/uploads/2021/02/Doppeltu%CC%88rme._Grossmu%CC%88nster_Zu%CC%88rich-1280x640.jpg" class="card-img-top" alt="Grossmünster">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Grossmünster</h4>
+                            <p class="card-text">This is a prominent Protestant church in Zurich, notable for its twin towers
+                                and significant role in the Swiss Reformation in the early 16th century.</p>
+                            <a href="https://en.wikipedia.org/wiki/Grossm%C3%BCnster" class="btn btn-primary">Learn More</i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4" style="height: 250px;">
-                <img src="https://webunwto.s3.eu-west-1.amazonaws.com/2020-01/geneva-liaison-office.jpg"
-                    class="card-img-top" alt="Image2">
-                <div class="card-body">
-                    <h5 class="card-title">Palace of Nations</h5>
-                    <p class="card-text">Located in Geneva, this building serves as the European headquarters of the
-                        United Nations. Built in the 1930s, it was originally home to the League of Nations. The palace
-                        is known for hosting numerous diplomatic meetings and is surrounded by parkland with views of
-                        Lake Geneva.</p>
-                    <a href="https://en.wikipedia.org/wiki/Palace_of_Nations" class="btn btn-primary">Learn More</a>
+                <div class="col">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <img src="https://webunwto.s3.eu-west-1.amazonaws.com/2020-01/geneva-liaison-office.jpg" class="card-img-top" alt="Palace of Nations">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Palace of Nations</h4>
+                            <p class="card-text">Located in Geneva, this building serves as the European headquarters of the
+                                United Nations.</p>
+                            <a href="https://en.wikipedia.org/wiki/Palace_of_Nations" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4" style="height: 250px;">
-                <img src="https://media.myswitzerland.com/image/fetch/w_1920,h_800,c_limit,f_auto,q_auto,e_sharpen:50/https%3A%2F%2Fwww.myswitzerland.com%2F-%2Fmedia%2Fst%2Fgadmin%2Fimages%2Fvarious%2Fweekly%20top%20news%2Ffestspiele_stgallen1_36510.jpg"
-                    class="card-img-top" alt="Image3">
-                <div class="card-body">
-                    <h5 class="card-title">Abbey of St. Gall</h5>
-                    <p class="card-text">The baroque buildings at St Gall were the crowning glory of a monastic culture
-                        with roots stretching back more than a thousand years.</p>
-                    <a href="https://en.wikipedia.org/wiki/Abbey_of_Saint_Gall" class="btn btn-primary">Learn More</a>
+                <div class="col">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <img src="https://media.myswitzerland.com/image/fetch/w_1920,h_800,c_limit,f_auto,q_auto,e_sharpen:50/https%3A%2F%2Fwww.myswitzerland.com%2F-%2Fmedia%2Fst%2Fgadmin%2Fimages%2Fvarious%2Fweekly%20top%20news%2Ffestspiele_stgallen1_36510.jpg" class="card-img-top" alt="Abbey of St. Gall">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Abbey of St. Gall</h4>
+                            <p class="card-text">The baroque buildings at St Gall were the crowning glory of a monastic culture
+                                with roots stretching back more than a thousand years.</p>
+                            <a href="https://en.wikipedia.org/wiki/Abbey_of_Saint_Gall" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4" style="height: 250px;">
-                <img src="https://media.myswitzerland.com/image/fetch/w_1920,h_800,c_limit,f_auto,q_auto,e_sharpen:50/https%3A%2F%2Fwww.myswitzerland.com%2F-%2Fmedia%2Fdam%2Fresources%2Fexperience%2Fz%2Fe%2Fzentrum%20paul%20klee%2Fimages%20all%20season%2F49290_32001800.jpeg"
-                    class="card-img-top" alt="Image4">
-                <div class="card-body">
-                    <h5 class="card-title">Paul Klee Center</h5>
-                    <p class="card-text">A museum dedicated to the artist Paul Klee, located in Bern, Switzerland and
-                        designed by the Italian architect Renzo Piano.</p>
-                    <a href="https://www.myswitzerland.com/en/experiences/zentrum-paul-klee/"
-                        class="btn btn-primary">Learn More</a>
+                <div class="col">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <img src="https://media.myswitzerland.com/image/fetch/w_1920,h_800,c_limit,f_auto,q_auto,e_sharpen:50/https%3A%2F%2Fwww.myswitzerland.com%2F-%2Fmedia%2Fdam%2Fresources%2Fexperience%2Fz%2Fe%2Fzentrum%20paul%20klee%2Fimages%20all%20season%2F49290_32001800.jpeg" class="card-img-top" alt="Paul Klee Center">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Paul Klee Center</h4>
+                            <p class="card-text">A museum dedicated to the artist Paul Klee, located in Bern, Switzerland and
+                                designed by the Italian architect Renzo Piano.</p>
+                            <a href="https://www.myswitzerland.com/en/experiences/zentrum-paul-klee/" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4" style="height: 250px;">
-                <img src="https://images.unsplash.com/photo-1510480248785-c4483daedb19?ixlib=rb-0.3.5&q=80&auto=format&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIzOTI1fQ&s=8a40a1ec165f1f6f9263d615ac8dc3cf.jpg"
-                    class="card-img-top" alt="Image5">
-                <div class="card-body">
-                    <h5 class="card-title">Château de Chillon</h5>
-                    <p class="card-text">The well-preserved fortress dates back to the 12th century and features
-                        stunning views, dungeons, and period furnishings, illustrating its strategic and political
-                        importance through history.</p>
-                    <a href="https://en.wikipedia.org/wiki/Chillon_Castle" class="btn btn-primary">Learn More</a>
+                <div class="col">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1510480248785-c4483daedb19?ixlib=rb-0.3.5&q=80&auto=format&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIzOTI1fQ&s=8a40a1ec165f1f6f9263d615ac8dc3cf.jpg" class="card-img-top" alt="Château de Chillon">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Château de Chillon</h4>
+                            <p class="card-text">The well-preserved fortress dates back to the 12th century, illustrating its 
+                                strategic and political importance through history.</p>
+                            <a href="https://en.wikipedia.org/wiki/Chillon_Castle" class="btn btn-primary" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4" style="height: 250px;">
-                <img src="https://media.izi.travel/712b0128-72a7-49c8-ae47-06c2adccc4d6/fcfa159b-e6e9-439f-ae83-98f4ab6347ba_800x600.jpg"
-                    class="card-img-top" alt="Image6">
-                <div class="card-body">
-                    <h5 class="card-title">Place du Bourg-de-Four</h5>
-                    <p class="card-text">This historic square in Geneva’s Old Town is the city’s oldest public square
-                        and a central meeting spot. It is surrounded by charming cafes, boutiques, and historic
-                        buildings, reflecting the area's medieval past and vibrant cultural atmosphere.</p>
-                    <a href="https://en.wikipedia.org/wiki/Place_du_Bourg-de-Four" class="btn btn-primary">Learn
-                        More</a>
+                <div class="col">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <img src="https://media.izi.travel/712b0128-72a7-49c8-ae47-06c2adccc4d6/fcfa159b-e6e9-439f-ae83-98f4ab6347ba_800x600.jpg" class="card-img-top" alt="Place du Bourg-de-Four">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Place du Bourg-de-Four</h4>
+                            <p class="card-text">This historic square in Geneva’s Old Town is the city’s oldest public square
+                                and a central meeting spot.</p>
+                            <a href="https://en.wikipedia.org/wiki/Place_du_Bourg-de-Four" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="container text-center">
+            <p>Copyright © 2024 | All rights reserved.</p>
+            <a href="#home" class="back-to-top">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) { 
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+const navLinks = document.querySelectorAll('.nav-link');
+const navbarCollapse = document.querySelector('.navbar-collapse');
+const navbar = document.querySelector('.navbar');
+const toggler = document.querySelector('.navbar-toggler');
+
+// Collapse menu and hide navbar when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        if (window.innerWidth < 992) {
+            navbarCollapse.classList.remove('show');
+            navbar.classList.remove('toggled');
+            navbar.classList.add('collapsed');
+        }
+    });
+});
+
+// Add toggled class when the menu bar is clicked
+toggler.addEventListener('click', function () {
+    if (!navbarCollapse.classList.contains('show')) {
+        navbar.classList.add('toggled');
+        navbar.classList.remove('collapsed');
+    } else {
+        navbar.classList.remove('toggled');
+    }
+});
+
+// Restore text and background when resizing window
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 992) {
+        navbar.classList.remove('collapsed', 'toggled');
+    }
+});
+    </script>
 
 </body>
 
