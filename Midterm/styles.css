@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixe;
+    background-attachment: fixed;
 }
 
 .back-button {
