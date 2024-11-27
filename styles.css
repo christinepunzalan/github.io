@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.navbar {
+    background-color: #020c22;
+}
+
 .navbar-nav .nav-link:hover {
     color: #f8f9fa;  
     background-color: #343a40; 
