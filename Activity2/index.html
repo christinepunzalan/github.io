@@ -210,7 +210,6 @@ const navbarCollapse = document.querySelector('.navbar-collapse');
 const navbar = document.querySelector('.navbar');
 const toggler = document.querySelector('.navbar-toggler');
 
-// Collapse menu and hide navbar when a link is clicked
 navLinks.forEach(link => {
     link.addEventListener('click', function () {
         if (window.innerWidth < 992) {
@@ -221,7 +220,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Add toggled class when the menu bar is clicked
 toggler.addEventListener('click', function () {
     if (!navbarCollapse.classList.contains('show')) {
         navbar.classList.add('toggled');
@@ -231,7 +229,6 @@ toggler.addEventListener('click', function () {
     }
 });
 
-// Restore text and background when resizing window
 window.addEventListener('resize', function () {
     if (window.innerWidth >= 992) {
         navbar.classList.remove('collapsed', 'toggled');
