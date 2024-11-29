@@ -14,6 +14,26 @@ html {
     scroll-behavior: smooth;
 }
 
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: #cfbfca;
+    color: #000000;
+    font-family: "Orbitron";
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #521942;
+ }
+
 .home-container {
     display: flex;
     align-items: center;
