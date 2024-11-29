@@ -18,7 +18,7 @@ html {
     position: absolute;
     top: 15px;
     left: 20px;
-    background-color: #cfbfca;
+    background-color: #f39c12;
     color: #000000;
     font-family: "Orbitron";
     border: none;
@@ -31,7 +31,8 @@ html {
 }
 
 .back-button:hover {
-    background-color: #521942;
+    background-color: #6f2f54;
+    color: white;
  }
 
 .home-container {
@@ -47,6 +48,7 @@ html {
     width: 100%; 
     padding: 15px; 
     margin-bottom: 100px;
+    padding-top: 70px;
 }
 
 .home-header h1 {
@@ -104,6 +106,7 @@ html {
     display: flex;
     justify-content: center; 
     gap: 10px;
+    padding-top: 50px;
 }
 
 h2 {
