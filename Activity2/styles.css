@@ -61,6 +61,31 @@ html {
     animation: slideIn 2s ease-out;
 }
 
+.home-buttons .btn-custom {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px; 
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #f39c12;
+    color: #020c22;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-buttons .btn-custom:hover {
+    background: #6f2f54;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
 h2 {
     font-family: 'Orbitron', sans-serif; 
     font-size: 36px; 
@@ -152,7 +177,7 @@ h2 span {
 
 #cities .card-body .btn {
     background: #f39c12;
-    color: white;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -163,6 +188,7 @@ h2 span {
 
 #cities .card-body .btn:hover {
     background: #6f2f54;
+    color: white;
 }
 
 #cities .container-fluid {
@@ -264,6 +290,7 @@ h2 span {
 
 .spot .card-body .btn:hover {
     background: #6f2f54;
+    color: white;
 }
 
 .footer {
