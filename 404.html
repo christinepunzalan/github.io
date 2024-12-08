@@ -20,9 +20,15 @@
             align-items: center;
         }
         
-      @media (max-width: 480px) {
+        @media (max-width: 768px) {
+           body {
+               background-attachment: scroll; 
+           }
+       }
+        
+        @media (max-width: 480px) {
             body {
-                background-position: center center; /* Fallback behavior */
+                background-attachment: scroll; 
             }
         }
         
