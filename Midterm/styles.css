@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 body {
-    background-image: url(https://www.creativeboom.com/upload/articles/0f/0f3ddbfc6ee87ed8511af72d925f72d13e38d6f0_1888.jpg);
+    background-image: url(api-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
